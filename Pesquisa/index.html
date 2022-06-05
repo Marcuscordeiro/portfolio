@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <h1 id="title">
+  Formulário de Pesquisa de Marcus Vinicius
+  </h1>
+  <p id="description">Formulário de gestão ambiental</p>
+  <fieldset>
+    <form id="survey-form">
+    <label id="name-label">Nome:<input id="name" type="text" placeholder="Escreva seu nome" required></label>
+    <label id="email-label">E-mail: <input id="email" type="email" placeholder="Escreva seu e-mail"required></label>
+    <label id="number-label">Idade: <input id="number" type="number" min="18" max="99" placeholder="Escreva sua idade" required></label>
+     <label>Você realiza coleta seletiva? <select id="dropdown">
+      <option>Escolha aqui</option>
+      <option>Sim</option>
+      <option>Não</option>
+      <option>Não sei dizer</option>
+      </select>
+      <label>Você é: </label>
+      <input type="radio" name="account-type" class="inline" value="PF" /> Pessoa Física</label>
+        <label><input type="radio" name="account-type" class="inline" value="PJ" /> Pessoa Jurídica</label>
+        <label>
+          <input type="checkbox" name="terms" class="inline" value="terms" required /> Eu quero receber atualizações de <a href="https://www.freecodecamp.org/news/terms-of-service/">sustentabilidade ambiental</a>
+			  </label>
+        <label>
+          <input type="checkbox" name="terms" class="inline" value="enga" required /> Eu sou profissional de engenharia ambiental</a>
+			  </label>
+        <label>Como você nos conheceu??
+          <select name="referrer">
+            <option value="">(Escolha uma opção)</option>
+            <option value="1">Indicação de amigos</option>
+            <option value="2">Redes Sociais</option>
+            <option value="3">Fóruns de Sustentabilidade</option>
+            <option value="4">Outros</option>
+          </select>
+        </label>
+        <label>Quais ações de sustentabilidade você realiza?
+          <textarea name="actions" rows="3" cols="30" placeholder="Eu separo os resíduos..."></textarea>
+			  </label>
+     <input type="submit" id="submit" value="Submit" />
+    </form>
+     </fieldset>
+
+
+
+
+</html>
